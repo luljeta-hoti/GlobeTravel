@@ -1,0 +1,1511 @@
+/*
+Autori: Luljeta Hoti
+Pershkrimi: Ky stil eshte i pergaditur per GlobeTravel
+*/
+
+* 
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html 
+{
+    scroll-behavior: smooth;
+}
+
+body 
+{
+    font-family: 'Poppins',sans-serif;
+    width: fit-content;
+}
+
+:root
+{
+    --bardhe: white;
+    --zi: #000000;
+    --blu-primare: #010E37;
+    --blu-sekondare: #04268E;
+    --blu-celet: #0A44C5;
+    --gri: #ddd;
+    --grierret: #777777;
+}
+
+a 
+{
+    text-decoration: none;
+}
+
+ul 
+{
+    list-style: none;
+}
+
+.container
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 250px 0 250px;
+}
+
+/* TOPBAR - ketu eshte fillimi i topbarit*/
+.topbar 
+{
+    background: var(--blu-primare);
+    color: var(--bardhe);
+    font-size: 14px;
+    padding: 12px 0;
+    max-width: 100%;
+}
+
+.topbar .container 
+{
+    max-width: 100%;  
+    margin: 0 0 0 auto; 
+    padding: 0 250px 0 250px;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topbar .container div:first-child 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.topbar .container div:last-child 
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+.topbar span 
+{
+    font-weight: 600;
+}
+
+.topbar img 
+{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.topbar a img 
+{
+    width: 15px;
+    transition: 0.5s;
+}
+
+.topbar a:hover img 
+{
+    opacity: 0.8;
+}
+
+/* TOPBAR - ketu eshte mbarimi i topbarit*/
+
+
+/* NAVBAR - ketu eshte fillimi i navbarit*/
+nav 
+{
+    padding: 17px 0;      
+    position: absolute;
+    padding: 5px;
+    width: 100%;
+    z-index: 10;
+    border-bottom: 1px solid darkgray
+}
+
+nav .container 
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo 
+{
+    color: var(--bardhe);
+    font-size: 22px;        
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+.menyja 
+{
+    display: flex;
+    gap: 20px;              
+    flex-grow: 1;
+    justify-content: left;
+    margin-left: 70px ;
+}
+
+
+.menyja li a 
+{
+    color: var(--bardhe);
+    font-size: 13px; 
+    font-weight: 700;      
+    padding: 5px;      
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.menyja .shigjeta 
+{
+    width: 8px;             
+    height: 8px;
+}
+
+
+.butoni-nav 
+{
+    background: var(--bardhe);
+    color: var(--blu-sekondare);
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 130px;
+    height: 48px;          
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    padding: 2px;
+}
+
+/* NAVBAR - ketu eshte mbarimi i navbarit*/
+
+/* HERO - ketu eshte fillimi i hero-it*/
+.hero 
+{
+    min-height: 653px;       
+    height: auto;             
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 48px;        
+}
+
+
+.hero-bg 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("Libraria/hero.jpg") center/cover no-repeat;
+    z-index: 1;
+}
+
+
+.hero::after 
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #002798;
+    opacity: 0.85;
+    z-index: 2;
+}
+
+.hero .container 
+{
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 80px 250px;     
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.hero .container div:first-child 
+{
+    width: 50%;
+    color: var(--bardhe);
+}
+
+.titulli-vogel 
+{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    color: var(--bardhe) !important;
+}
+
+.hero .titulli-kryesor 
+{
+    font-size: 55px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: var(--bardhe)!important;
+}
+
+.pershkrimi 
+{
+    font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 520px;
+    color: #ffffff!important;
+}
+
+.butoni 
+{
+    display: inline-block;
+    background: var(--bardhe);
+    color: var(--blu-sekondare);
+    padding: 14px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.butoni:hover
+{
+    background: var(--blu-celet);
+    color: var(--bardhe);
+}
+
+.foto-hero 
+{
+    width: 50%;
+}
+
+.foto-hero img 
+{
+    width: 100%;
+    max-width: 400px;
+    height: 450px; 
+    border-radius: 50% 42% 60% 48%;
+    position: relative;
+    z-index: 3;
+    object-fit: cover;
+}
+
+/* HERO - ketu eshte mbarimi i hero-it*/
+
+/* RRETH NESH - ketu eshte fillimi i Rreth nesh*/
+.rreth-nesh 
+{
+    position: relative;
+    padding: 120px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.rreth-nesh .container 
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+.rreth-nesh .foto-rrethnesh 
+{
+    width: 50%;
+}
+
+.rreth-nesh .foto-rrethnesh img 
+{
+  width: 100%;
+    max-width: 400px;
+    height: 450px; 
+    border-radius: 50% 42% 60% 48%;
+    position: relative;
+    z-index: 3;
+    object-fit: cover;
+}
+
+
+.rreth-nesh .teksti-rreth 
+{
+    width: 50%;
+    color: var(--blu-primare);
+}
+
+.titulli-small 
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #1B3FB0;
+}
+
+.titulli-madh 
+{
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #010E37;
+    max-width: 600px;
+}
+
+.paragrafi 
+{
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: #8392A5;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+.paragrafi:last-of-type 
+{
+    margin-bottom: 30px;
+}
+
+
+.rreth-nesh .butoni 
+{
+    display: inline-block;
+    background: #002699;
+    color: var(--bardhe);
+    padding: 20px 20px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: lowercase;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.rreth-nesh .butoni:hover 
+{
+    background: var(--blu-celet);
+    color: var(--bardhe);
+}
+
+/* RRETH NESH - ketu eshte mbarimi i Rreth nesh*/
+
+
+/* ARRITJET - ketu eshte fillimi i ARRITJET */
+.arritjet
+{
+    background: #010E37;
+    color: var(--bardhe);
+    padding: 80px 0;
+}
+
+.arritjet .container 
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+.arritjet-pozicionimi 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+
+.arritjet-tekst
+{
+    width: 40%;
+}
+
+.arritjet-tekst .titulli-vogel 
+{
+    color: #0A44C5 !important;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.arritjet-tekst .titulli-kryesor 
+{
+    color: var(--bardhe);
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+
+.arritjet-grid 
+{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.arritja 
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.arritja img 
+{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+
+.arritja h3 
+{
+    font-size: 48px;
+    line-height: 1;
+    margin: 0 0 5px 0;
+    color: var(--bardhe);
+    font-weight: 700;
+}
+
+.arritja p 
+{
+    font-size: 16px;
+    margin: 0;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+/* ARRITJET - ketu eshte fillimi i ARRITJET */
+
+/* SHERBIMET - ketu eshte fillimi i SHERBIMET*/
+.sherbimet 
+{
+    background: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.sherbimet .container 
+{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 250px;
+}
+
+
+.sherbimet .container > div:first-child 
+{
+    margin-bottom: 60px;
+}
+
+.titulli-mes 
+{
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1E309C;
+}
+
+.titulli-mesit 
+{
+    font-size: 48px;
+    line-height: 1.2;
+    margin: 0 0 20px;
+    color: #010E37;
+}
+
+.pershkrimi-mes 
+{
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #626C84;
+}
+
+
+.kartat 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.karta 
+{
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px 25px 30px 25px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.karta:hover 
+{
+    transform: translateY(-5px);
+
+}
+
+
+.karta img 
+{
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    display: block;
+}
+
+
+.karta h3 
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #242946;
+}
+
+
+.karta p 
+{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #606682;
+    margin-bottom: 25px;
+    padding: 0 5px;
+    flex: 1;
+}
+
+
+.karta .lexo-me-shume 
+{
+    color: #14244B;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.3s;
+    margin-top: 10px;
+}
+/* SHERBIMET - ketu eshte mbarimi i SHERBIMET */
+
+/* STATISTIKAT - ketu eshte fillimi i STATISTIKAVE */
+.statistikat 
+{
+    min-height: 653px;       
+    height: auto;             
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 48px;  
+}
+
+
+.statistikat .container 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px; 
+  padding: 80px 20px; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  gap: 40px;
+  text-align: left;
+}
+
+.titulli-vogel 
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: #222!important;
+  text-align: left;
+}
+
+.title-kryesor 
+{
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #222;
+  text-align: left ;
+  padding-bottom: 20px;
+}
+
+.pershkrimi 
+{
+  font-size: 17px;
+    margin-bottom: 30px;
+    max-width: 520px;
+    color: #000!important;
+}
+
+
+.vija 
+{
+  width: 60px;
+  height: 2px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+
+.small-image img 
+{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.statistikat-perqindje{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.statistikat-perqindje h3{
+    font-size: 20px;
+    margin: 0;
+    color: #000;
+}
+
+.statistikat-perqindje p{
+    margin: 0;
+    width: calc(100% - 100px); 
+    margin-left: 100px;
+    margin-top: -50px;        
+}
+
+
+
+
+
+
+.big-image 
+{
+  position:relative;
+  width: 370px;
+  height: 480px;               
+}
+
+.big-image img 
+{
+
+    position:relative;               
+    border-radius: 10px;
+    object-fit: cover;
+    max-width: 400px;
+    height: 450px; 
+    border-radius: 50% 42% 60% 48%;
+    padding-right: 70px;
+    
+}
+
+
+/* STATISTIKAT - ketu eshte mbarimi i STATISTIKAVE */
+
+/* SHERBIMET - ketu fillon SHERBIMET*/
+.services 
+{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #F7F7F9;
+  text-align: center; 
+}
+
+
+.services-text-center .small-text 
+{
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #043FA4!important;
+  font-weight: 700;
+}
+
+.services-text-center .title-text 
+{
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 50px 0;
+  color: #020F38;
+}
+
+.services-text-center .description-text 
+{
+  font-size: 18px;
+  line-height: 1.4;
+  max-width: 800px;
+  margin: 0 auto 60px auto; 
+}
+
+
+.steps-wrapper 
+{
+  display: flex;
+  justify-content: center;
+  gap: 60px; 
+  flex-wrap: wrap; 
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.step 
+{
+  position: relative;
+  z-index: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step .circle 
+{
+  width: 60px;
+  height: 60px;
+  background-color: #002699; 
+  color: #fff;               
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 2px solid transparent; 
+  z-index: 2;
+}
+
+
+.step:nth-child(n+2) .circle 
+{
+  background-color: #fff;
+  color: #2373FB;
+  border: 2px solid #ccc;
+}
+
+
+.step .step-title 
+{
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #010E37;
+}
+
+.step:not(:last-child) .step-title::after 
+{
+  content: "------";
+  color: #1E309C;
+  position: absolute;
+  right: -70px; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+}
+
+
+.step .step-desc 
+{
+  font-size: 14px;
+  line-height: 1.4;
+  max-width: 150px;
+  text-align: center;
+  margin: 0;
+}
+/* 4 HAPAT - ketu mbaron HAPAT */
+
+
+/* EKIPI - ketu fillon EKIPI */
+.team-section 
+{
+  width: 100%;
+  padding: 80px 0px;
+  background-color: #ffffff;
+  
+}
+
+.team-section .container 
+{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;       
+  max-width: none;   
+  margin: 0;
+  gap: 40px;
+  padding: 0 250px;   
+}
+
+
+.team-text 
+{
+  flex: 1 1 450px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.team-images 
+{
+  flex: 1 1 600px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px; 
+  justify-items: center; 
+}
+
+
+.team-member 
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+}
+
+.circle-img 
+{
+  width: 160px; 
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.team-member .name
+{
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.team-member .position 
+{
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.team-text .title-text 
+{
+  font-size: 48px;      
+  line-height: 1.2;     
+  margin-bottom: 17px;  
+  color: #010E37;
+}
+
+.team-text .small-text 
+{
+  font-size: 16px;
+  margin-bottom: 15px;  
+  color: #0C41AB;
+  font-weight: 700;
+}
+
+.team-text .description-text 
+{
+  font-size: 15px;
+  line-height: 1.6;     
+  margin-bottom: 20px;  
+  color: #969EAC;
+}
+
+
+.verified-item 
+{
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;  
+  gap: 12px;
+  font-weight: bold;      
+  font-size: 16px;        
+}
+
+.verified-item p 
+{
+  margin: 0;
+  color: #000;
+}
+
+.verified-item img 
+{
+  width: 24px;
+  height: 24px;
+}
+
+.cta-button 
+{
+  display: inline-flex;          
+  align-items: center;           
+  justify-content: center;       
+  background-color: #002699;     
+  color: #ffffff;                
+  font-weight: bold;             
+  font-size: 16px;               
+  padding: 14px 40px;            
+  border: none;                  
+  border-radius: 999px;          
+
+}
+/* EKIPI - ketu fillon EKIPI */
+
+
+/* CMIMET - ketu fillon cmimet*/
+.pricing-section 
+{
+  width: 100%;
+  padding: 80px 20px;
+  background-color: #ffffff;
+  text-align: center; 
+}
+
+
+.services-text-center
+{
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.services-text-center .small-text
+{
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.services-text-center .title-text
+{
+  font-size: 48px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+}
+
+.pricing-section .container
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.pricing-cards
+{
+  margin-top: 40px;
+  width: 100%;
+}
+
+
+.pricing-cards
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+.pricing-cards .pricing-card:nth-child(3) 
+{
+  grid-column: auto; 
+}
+
+.pricing-card 
+{
+  max-width: 350px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 25px 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+
+.card-top-text 
+{
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+.price 
+{
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+}
+
+.price .dollar 
+{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.price .per-month 
+{
+  font-size: 16px;
+  color: #555;
+}
+
+.price-line 
+{
+  width: 100%;
+  height: 1px;
+  background-color: #ccc;
+  opacity: 0.3;
+  margin: 10px 0;
+}
+
+.card-desc 
+{
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+
+.cta-button 
+{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px 35px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.cta-button.white 
+{
+  background-color: #ffffff;
+  color: #002699;
+  border: 2px solid #002699;
+}
+
+.cta-button.white:hover 
+{
+  background-color: #002699;
+  color: #ffffff;
+}
+
+
+.cta-button.blue 
+{
+  background-color: #002699;
+  color: #ffffff;
+  border: none;
+}
+
+.cta-button.blue:hover 
+{
+  opacity: 0.85;
+}
+
+
+.features 
+{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.features p 
+{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin: 0;
+}
+
+.check-icon 
+{
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* CMIMET - ketu mabron cmimet*/
+
+/* PYETJET - ketu fillon pyetjet */
+.two-column-section 
+{
+  display: flex;
+  gap: 40px;
+  padding: 100px 250px;
+  background-color: #ffffff;
+}
+
+/* PYETJET - ketu fillon pyetjet */
+.left-side 
+{
+  flex: 1;
+  text-align: left;
+}
+
+.left-side .small-text 
+{
+  font-size: 13px;
+  margin-bottom: 10px;
+  color: #153AA8;
+  font-weight: 700;
+}
+
+.left-side .title-text 
+{
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  color: #010E37;
+}
+
+.left-side .description 
+{
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+  color:#737286;
+}
+
+.left-side .blue-btn 
+{
+  background-color: #002699;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  width: 160px;
+  height:50px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500px;
+}
+
+
+.right-side 
+{
+  flex: 1;
+}
+
+.faq-box 
+{
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.faq-box.open 
+{
+  border-color: none; 
+}
+
+.faq-question 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  text-align: left;
+}
+
+.faq-question h3 
+{
+  font-weight: bold;
+  margin: 0;
+}
+
+.toggle-btn 
+{
+  font-size: 24px;
+  user-select: none;
+}
+
+.faq-answer 
+{
+  margin-top: 15px;
+  display: block; 
+  text-align: left;
+}
+
+.faq-box:not(.open) .faq-answer
+{
+  display: none;
+}
+
+/* PYETJET - ketu mbaron pyetjet */
+
+/* CTA -ketu fillon cta */
+.blue-section 
+{
+  background-color: #010E37;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.blue-section .content-center 
+{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blue-section .tiny-text 
+{
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #105FEB;
+}
+
+.blue-section .big-title 
+{
+  font-size: 50px;
+  line-height: 1.2;
+  margin-bottom: 25px;
+}
+
+.small-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 0 2px 0 20px; 
+  max-width: 400px;
+  height: 45px;
+  margin: 0 auto;
+  background-color: transparent; 
+}
+
+.small-container .container-text 
+{
+  font-size: 12px; 
+  margin: 0;        
+}
+
+.small-container .purple-btn 
+{
+  background-color: #002699;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  margin-left: 0;
+}
+
+/* CTA -ketu mbaron cta */
+
+/* FOOTER - ketu fillon footer-i*/
+.info-section 
+{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info-box 
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: #f5f5f5;
+  padding: 20px 25px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: left;
+}
+
+
+.info-box .social-icons 
+{
+  width: 45px;
+  height: 45px;
+  min-width: 45px; 
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box .social-icons img 
+{
+  width: 25px;
+  height: 25px;
+}
+
+
+.info-text .tiny-text 
+{
+  font-size: 12px;
+  margin: 0;
+  text-align: left;
+}
+
+.info-text .info-number 
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 3px 0 0 0;
+}
+
+.footer 
+{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin-left: 230px;
+}
+
+.footer-column:first-child 
+{
+  margin-right: 100px;
+}
+
+
+.footer-column:nth-child(2),
+.footer-column:nth-child(3) 
+{
+  margin-right: 10px;
+}
+
+.footer-column 
+{
+  flex: 1;
+  min-width: 200px;
+  text-align: left;
+}
+
+
+.footer-logo 
+{
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+}
+
+
+.footer-desc 
+{
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+
+.social-icons 
+{
+  display: flex;
+  gap: 10px;
+}
+
+.social-circle 
+{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #E5E6EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.social-circle img 
+{
+  width: 16px;
+  height: 16px;
+}
+
+
+.footer-title 
+{
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column p 
+{
+  margin: 5px 0;
+}
+
+.footer-line 
+{
+  width: 90%;
+  height: 1px;
+  background-color: #d9d9d9;
+  margin: 30px auto;
+}
+
+.copyright 
+{
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  height: auto;
+  margin-bottom: -50px;
+}
+
+/* FOOTER - ketu fillon footer-i*/

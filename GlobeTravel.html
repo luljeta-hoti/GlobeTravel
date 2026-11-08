@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="sq">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GlobeTravel | Udhëto botën</title>
+
+<link href="GlobeTravel.css" rel="stylesheet">
+
+<style>
+
+
+
+</style>
+
+<!--TOPBAR -->
+<div class="topbar">
+    <div class="container">
+        <div class="topbar-majtas">
+            <img src="Libraria/locationpin.png" alt="Ikona e lokacionit">
+            <span>Rruga B, Prishtinë</span>
+            <span class="ndarese">|</span>
+            <img src="Libraria/emailTOPBAR.png" alt="Ikona e emailit">
+            <span>info@globetravel.com</span>
+        </div>
+        
+        
+        <div class="topbar-djathtas">
+            <img src="Libraria/ORA-topbar.png" alt="Ikona e ores">
+            <span>Hënë - Premte : 08:00 - 17:00</span>
+            <a href="#"><img src="Libraria/FB-topbar.png" alt="Facebook"></a>
+            <a href="#"><img src="Libraria/LINKEDIN-topbar.png" alt="LinkedIn"></a>
+            <a href="#"><img src="Libraria/TWITTER-topbar.png" alt="Twitter"></a>
+        </div>
+    </div>
+</div>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="container">
+            <div class="logo">GlobeTravel</div>
+            <ul class="menyja">
+    <li><a href="index.html">Ballina <img src="Libraria/CHEVRON-navbar.png" alt="shigjeta" class="shigjeta"></a></li>
+    <li><a href="#destinacionet">Destinacionet</a></li>
+    <li><a href="#paketat">Paketat <img src="Libraria/CHEVRON-navbar.png" alt="shigjeta" class="shigjeta"></a></li>
+    <li><a href="#blogu">Blog <img src="Libraria/CHEVRON-navbar.png" alt="shigjeta" class="shigjeta"></a></li>
+    <li><a href="#rrethnesh">Rreth Nesh</a></li>
+    <li><a href="#kontakti">Kontakti</a></li>
+</ul>
+
+            <button class="butoni-nav" onclick="rezervo()">Rezervo Tani</button>
+        </div>
+    </nav>
+
+ <!-- HERO -->
+<div class="hero">
+    <div class="hero-bg"></div> 
+    <div class="container">
+    
+        <div>
+            <p class="titulli-vogel">Zbuloni botën me udhëtime të paharrueshme</p>
+            <h2 class="titulli-kryesor" id="titulli-hero">
+                Destinacionet më <br>
+                të bukura për aventurën tuaj
+            </h2>
+            <p class="pershkrimi">
+                GlobeTravel ofron paketa turistike, guida profesionale dhe përvoja autentike për udhëtarët që eksplorojnë botën.
+            </p>
+            <button class="butoni">Shikoni Paketat</button>
+        </div>
+
+        <div class="foto-hero">
+            <img src="Libraria/imazh-hero.jpg" alt="Hero Image">
+        </div>
+    </div>
+</div>
+
+
+ <!-- RRETH NESH -->
+<div class="rreth-nesh" id="rrethnesh">
+    <div class="container">
+      
+        <div class="foto-rrethnesh">
+            <img src="Libraria/foto-rrethnesh.jpg" alt="Rreth nesh foto">
+        </div>
+       
+        <div class="teksti-rreth">
+            <p class="titulli-small">Eksperienca jonë</p>
+            <h2 class="titulli-madh">
+                Udhëtime pa stres,<br> e kujtime përjetë
+            </h2>
+            <p class="paragrafi">
+                Ne organizojmë udhëtime të personalizuara duke përfshirë fluturime, hotele dhe aktivitete për çdo destinacion në botë.
+            </p>
+            <p class="paragrafi">
+                Ekipi ynë kujdeset për çdo detaj të udhëtimit tuaj në mënyrë që ju të shijoni eksperiencën pa stres. Ne garantojmë përvoja të paharrueshme dhe kujtime që do t’i ruani gjatë gjithë jetës.
+            </p>
+            <button class="butoni">Planifiko Udhëtimin</button>
+        </div>
+    </div>
+</div>
+
+ <!-- ARRITJET -->
+<div class="arritjet">
+    <div class="container">
+        <div class="arritjet-pozicionimi">
+            <div class="arritjet-tekst">
+                <p class="titulli-vogel">Arritjet tona</p>
+                <h2 class="titulli-kryesor">Sukses i Arritur</h2>
+            </div>
+    
+            <div class="arritjet-grid">
+                <div class="arritja">
+                    <img src="Libraria/Destinacione.png" alt="Ikona e destinacioneve">
+                    <h3>100+</h3>
+                    <p>Destinacione</p>
+                </div>
+                <div class="arritja">
+                    <img src="Libraria/Udhetime.png" class="Ikona e Udhetimeve">
+                    <h3>73+</h3>
+                    <p>Udhëtime të organizuara</p>
+                </div>
+                <div class="arritja">
+                    <img src="Libraria/Agjente.png" class="Ikona e agjeteve">
+                    <h3>28+</h3>
+                    <p>Agjentë udhëtimi</p>
+                </div>
+            </div>  
+        </div>  
+    </div>  
+</div>  
+
+    <!-- SHERBIMET -->
+    <div class="sherbimet" id="sherbimet">
+        <div class="container">
+            <div>
+                <p class="titulli-mes">Shërbimet tona</p>
+                <h2 class="titulli-mesit">
+                    Gjithçka që ju nevojitet<br>
+                    për udhëtimin tuaj
+                </h2>
+                <p class="pershkrimi-mes">
+                    Ne ofrojmë një gamë të plotë shërbimesh turistike për ta bërë udhëtimin tuaj të lehtë, të sigurt dhe gjithmonë të paharrueshëm.
+                </p>
+            </div>
+
+    
+            <div class="kartat">
+    
+    <div class="karta">
+        <img src="Libraria/Fluturime.png" alt="Ikona e fluturimeve">
+        <h3>Fluturime</h3>
+        <p>Rezervoni fluturime drejt destinacioneve më të njohura në botë me çmime shumë konkurruese.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë →</a>
+    </div>
+
+    
+    <div class="karta">
+        <img src="Libraria/Hotele.png" alt="Ikona e hoteleve">
+        <h3>Hotele</h3>
+        <p>Zgjidhni nga një gamë e gjerë hotelesh komode dhe luksoze për çdo buxhet dhe preferencë personale.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë →</a>
+    </div>
+
+    
+    <div class="karta">
+        <img src="Libraria/TourGuide.png" alt="Ikona e guidave">
+        <h3>Guida Turistike</h3>
+        <p>Eksploroni qytete dhe atraksione me guida profesionale dhe eksperienca autentike, të paharrueshme.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë →</a>
+    </div>
+
+  
+    <div class="karta">
+        <img src="Libraria/Cruise.png" alt="Ikona e kruzerave">
+        <h3>Kruzera</h3>
+        <p>Përjetoni udhëtime luksoze në det me itinerare të veçanta, ekskluzive dhe pamje të paharrueshme.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë →</a>
+    </div>
+
+    
+    <div class="karta">
+        <img src="Libraria/PakoUdhetimi.png" alt="Ikona e paketave">
+        <h3>Paketa Turistike</h3>
+        <p>Paketa të plota që përfshijnë fluturime, hotele dhe aktivitete të ndryshme dhe të paharrueshme në destinacion.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë →</a>
+    </div>
+
+    
+    <div class="karta">
+        <img src="Libraria/Visa.png" alt="Ikona e vizave">
+        <h3>Visa & Dokumente</h3>
+        <p>Asistencë profesionale për aplikim të vizave, dokumenteve të udhëtimit dhe procedura të sigurta.</p>
+        <a href="#" class="lexo-me-shume">Lexo më shumë</a>
+    </div>
+</div>
+
+
+<!-- STATISTIKA-->
+<div class="statistikat">
+  <div class="container">
+
+    
+    <div class="statistikat-majte">
+      <p class="titulli-vogel">Pse të zgjidhni ne</p>
+      <h1 class="title-kryesor">
+        Shërbime turistike të <br> sigurta dhe të shpejta.
+      </h1>
+      <p class="pershkrimi">
+        Ne ofrojmë planifikim profesional të udhëtimeve dhe kujdesemi që çdo klient të ketë një eksperiencë të sigurt dhe të paharrueshme.
+      </p>
+
+      
+      <div class="vija"></div>
+
+      <div class="statistikat-perqindje">
+        <div class="small-image">
+          <img src="Libraria/80%.avif" alt="">
+        </div>
+          <h3>Klientë të kënaqur</h3> 
+          <br>
+          <p>Klientët rikthehen për eksperienca unike.</p>
+        </div>
+      </div>
+    </div>
+
+  
+     <div class="statistikat-djathte"></div>
+    <div class="big-image">
+      <img src="Libraria/statistikat-image.jpg" alt="Quality Image">
+    </div>
+</div>
+</div>
+
+
+<!-- 4 HAPA -->
+<div class="services">
+  <div class="services-text-center">
+    <p class="small-text">Si funksionon</p>
+    <h2 class="title-text">Rezervo udhëtimin tuaj<br>në katër hapa të thjeshtë</h2>
+  </div>
+
+  <div class="steps-wrapper">
+
+
+    <div class="step">
+      <div class="circle">1</div>
+      <p class="step-title"><strong>Zgjidhni destinacionin</strong></p>
+      <p class="step-desc">Zgjidhni nga 100+ destinacionet e botës.</p>
+    </div>
+
+
+    <div class="step">
+      <div class="circle">2</div>
+      <p class="step-title"><strong>Planifikoni udhëtimin</strong></p>
+      <p class="step-desc">Zgjidhni datat, hotelin dhe aktiviteteti.</p>
+    </div>
+
+    
+    <div class="step">
+      <div class="circle">3</div>
+      <p class="step-title"><strong>Rezervoni paketën</strong></p>
+      <p class="step-desc">Konfirmoni rezervimin dhe aventura filloj.</p>
+    </div>
+
+  
+    <div class="step">
+      <div class="circle">4</div>
+      <p class="step-title"><strong>Shijoni udhëtimin</strong></p>
+      <p class="step-desc">Shijojeni dhe krijoni kujtime unike </p>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- EKIPI-->
+<div class="team-section">
+  <div class="container">
+
+    
+    <div class="team-text">
+      <p class="small-text">Ekipi ynë</p>
+      <h2 class="title-text">Ne jemi këtu në shërbimin tuaj</h2>
+      <p class="description-text">
+        Eksperiencë e gjatë në planifikimin e udhëtimeve dhe krijimin e itinerareve perfekte për klientët.
+      </p>
+
+      <div class="verified-item">
+        <img src="Libraria/verified.png" alt="Verified Icon">
+        <p>Ekspertë të certifikuar</p>
+      </div>
+
+      <div class="verified-item">
+        <img src="Libraria/verified.png" alt="Verified Icon">
+        <p>Përvojë shumëvjeçare në treg </p>
+      </div>
+
+      <button class="cta-button">Na Kontaktoni</button>
+    </div>
+
+    
+    <div class="team-images">
+    
+      <div class="team-member">
+        <img src="Libraria/Arben Krasniqi.jpg" alt="Person 1" class="circle-img">
+        <p class="name"><strong>Arben Krasniqi</strong></p>
+        <p class="position">Ekspert</p>
+      </div>
+
+      
+      <div class="team-member">
+        <img src="Libraria/Gentian Berisha.jpg" alt="Person 2" class="circle-img">
+        <p class="name"><strong>Gentian Berisha</strong></p>
+        <p class="position">Menaxher</p>
+      </div>
+
+      
+      <div class="team-member">
+        <img src="Libraria/Luan Dervishi.jpg" alt="Person 3" class="circle-img">
+        <p class="name"><strong>Luan Dervishi</strong></p>
+        <p class="position">Koordinator</p>
+      </div>
+
+      
+      <div class="team-member">
+        <img src="Libraria/Elira Gashi.jpg" alt="Person 4" class="circle-img">
+        <p class="name"><strong>Elira Gashi</strong></p>
+        <p class="position">Marketing</p>
+      </div>
+
+      
+      <div class="team-member">
+        <img src="Libraria/Flamur Hoxha.jpg" alt="Person 5" class="circle-img">
+        <p class="name"><strong>Flamur Hoxha</strong></p>
+        <p class="position">Agjent</p>
+      </div>
+
+      
+      <div class="team-member">
+        <img src="Libraria/Amela Selmani.jpg" alt="Person 6" class="circle-img">
+        <p class="name"><strong>Amela Selmani</strong></p>
+        <p class="position">Konsulente</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!--CMIMET-->
+<div class="pricing-section">
+  <div class="container">
+
+    
+    <div class="services-text-center">
+      <p class="small-text">Paketat tona</p>
+      <h2 class="title-text">Zgjidhni paketën ideale <br> për eksperiencë unike</h2>
+    </div>
+
+    
+    <div class="pricing-cards">
+      
+      <div class="pricing-card">
+        <p class="card-top-text">Adventure Plan</p>
+        <div class="price">
+          <span class="dollar">$30</span><span class="per-month">/muaj</span>
+        </div>
+        <div class="price-line"></div>
+        <p class="card-desc">Ideal për udhëtarët që kërkojnë aventura dhe destinacione të reja.</p>
+        <button class="cta-button white">Zgjidh Planin</button>
+
+        <div class="features">
+          <p><img src="Libraria/check.png" class="check-icon"> Rezervim fluturimi</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Hotel i përzgjedhur</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Transfer aeroporti</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Mbështetje gjatë udhëtimit</p>
+        </div>
+      </div>
+
+      <div class="pricing-card">
+        <p class="card-top-text">Explorer Plan</p>
+        <div class="price">
+          <span class="dollar">$50</span><span class="per-month">/muaj</span>
+        </div>
+        <div class="price-line"></div>
+        <p class="card-desc">Për ata që duan të eksplorojnë dhe përfitojnë shërbime shtesë</p>
+       <button class="cta-button blue">Zgjidh Planin</button>
+
+        <div class="features">
+          <p><img src="Libraria/check.png" class="check-icon"> Fluturime dhe hotel</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Guida turistike</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Aktivitete në destinacion</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Mbështetje 24/7</p>
+        </div>
+      </div>
+
+
+      <div class="pricing-card">
+        <p class="card-top-text">Premium Plan</p>
+        <div class="price">
+          <span class="dollar">$80</span><span class="per-month">/muaj</span>
+        </div>
+        <div class="price-line"></div>
+        <p class="card-desc">Paketa luksoze për eksperiencë të plotë dhe udhëtime ekskluzive.</p>
+        <button class="cta-button white">Zgjidh Planin</button>
+
+        <div class="features">
+          <p><img src="Libraria/check.png" class="check-icon"> Fluturime premium</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Hotele luksoze</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Guida private</p>
+          <p><img src="Libraria/check.png" class="check-icon"> Eksperienca ekskluzive</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<!-- PYETJET -->
+<section class="two-column-section">
+  <div class="left-side">
+    <p class="small-text">Pyetje të shpeshta</p>
+    <h2 class="title-text">
+      Gjithçka që duhet
+      të dini
+    </h2>
+    <p class="description">
+      Këtu gjeni përgjigje për pyetjet më të zakonshme rreth rezervimeve dhe udhëtimeve tona.
+    </p>
+    <button class="blue-btn">Na Kontaktoni</button>
+  </div>
+
+  
+  <div class="right-side">
+    <div class="faq-box open">
+      <div class="faq-question">
+        <h3>Si mund të rezervoj një udhëtim?</h3>
+        <span class="toggle-btn">−</span>
+      </div>
+      <p class="faq-answer">
+       Ju mund të rezervoni online, me email, ose duke kontaktuar agjentët tanë profesionistë
+      </p>
+    </div>
+
+    
+    <div class="faq-box">
+      <div class="faq-question">
+        <h3>A ofroni udhëtime të personalizuara?</h3>
+        <span class="toggle-btn">+</span>
+      </div>
+    </div>
+
+  
+    <div class="faq-box">
+      <div class="faq-question">
+        <h3>Si funksionon pagesa dhe anulimi?</h3>
+        <span class="toggle-btn">+</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="blue-section">
+  <div class="content-center">
+    <p class="tiny-text">Planifiko udhëtimin</p>
+    <h2 class="big-title">Filloni aventurën tuaj<br>pa humbur kohë.</h2>
+
+    <div class="small-container">
+      <p class="container-text">Rezervoni paketën tuaj</p>
+      <button class="purple-btn">Konsultim Falas</button>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+
+<div class="info-section">
+  <div class="info-box">
+    <div class="social-icons">
+        <img src="Libraria/telefoni.png" alt="Ikona e Telefonit">
+    </div>
+    <div class="info-text">
+      <p class="tiny-text">Na Telefononi</p>
+      <p class="info-number">+383 44 123 456</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="social-icons">
+        <img src="Libraria/email-footer.png" alt="Ikona e Email">
+    </div>
+    <div class="info-text">
+      <p class="tiny-text">Na Shkruani</p>
+      <p class="info-number">contact@globetravel.com</p>
+    </div>
+  </div>
+
+  <div class="info-box">
+    <div class="social-icons">
+        <img src="Libraria/locationpin.png" alt="Ikona e Lokacionit">
+    </div>
+    <div class="info-text">
+      <p class="tiny-text">Na Vizitoni</p>
+      <p class="info-number">Rruga B, Prishtinë</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+
+  <div class="footer-column">
+    <div class="footer-logo">
+    <h2>GlobeTravel</h2>
+</div>
+    <p class="footer-desc">
+      GlobeTravel është partneri juaj i besueshëm për udhëtime të sigurta, të lehta dhe të paharrueshme në destinacionet më bukura të botës
+    </p>
+    <div class="social-icons">
+      <div class="social-circle">
+        <img src="Libraria/twitter-footer.png" alt="Ikona e Twitter" class="media-icon">
+      </div>
+      <div class="social-circle">
+        <img src="Libraria/facebook-footer.png" alt="Ikona e Facebook" class="media-icon">
+      </div>
+      <div class="social-circle">
+        <img src="Libraria/instagram-footer.png" alt="Ikona e Instagran" class="media-icon">
+      </div>
+      <div class="social-circle">
+        <img src="Libraria/GitHub-footer.png" alt="Ikona e GitHub" class="media-icon">
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="footer-column">
+    <p class="footer-title">Links të Shpejta</p>
+    <p>Faqe të Dobishme</p>
+    <p>Informacione</p>
+    <p>Rreth Nesh</p>
+    <p>Pakot</p>
+    <p>Kontakti</p>
+  </div>
+
+
+  <div class="footer-column">
+    <p class="footer-title">Shërbimet Tona</p>
+    <p>Rezervo Fluturimin</p>
+    <p>Paketat Turistike</p>
+    <p>Udhëzime Vizash</p>
+    <p>Blog & Këshilla</p>
+    <p>Pyetje të Shpeshta</p>
+  </div>
+
+  
+  <div class="footer-column">
+    <p class="footer-title">Informacione</p>
+    <p>Guide</p>
+    <p>Blog</p>
+    <p>Këshilla</p>
+    <p>Siguria</p>
+    <p>Politikat</p>
+  </div>
+</div>
+
+<div class="footer-line"></div>
+
+<div class="copyright">
+  <p>© 2026 GlobeTravel. Të gjitha të drejtat e rezervuara.</p>
+</div>
+
+</body>
+</html>
